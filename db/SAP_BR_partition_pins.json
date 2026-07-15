@@ -1,0 +1,129 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "addr_3",
+					"strict" : false
+				},
+				{
+					"name" : "addr_2",
+					"strict" : false
+				},
+				{
+					"name" : "addr_1",
+					"strict" : false
+				},
+				{
+					"name" : "addr_0",
+					"strict" : false
+				},
+				{
+					"name" : "LED0",
+					"strict" : false
+				},
+				{
+					"name" : "LED1",
+					"strict" : false
+				},
+				{
+					"name" : "LED2",
+					"strict" : false
+				},
+				{
+					"name" : "LED3",
+					"strict" : false
+				},
+				{
+					"name" : "LED4",
+					"strict" : false
+				},
+				{
+					"name" : "LED5",
+					"strict" : false
+				},
+				{
+					"name" : "LED6",
+					"strict" : false
+				},
+				{
+					"name" : "LED7",
+					"strict" : false
+				},
+				{
+					"name" : "mar_dip3",
+					"strict" : false
+				},
+				{
+					"name" : "PROGRAM_RUN_n",
+					"strict" : false
+				},
+				{
+					"name" : "mar_dip2",
+					"strict" : false
+				},
+				{
+					"name" : "mar_dip1",
+					"strict" : false
+				},
+				{
+					"name" : "mar_dip0",
+					"strict" : false
+				},
+				{
+					"name" : "WR_BUTTON",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "dal3",
+					"strict" : false
+				},
+				{
+					"name" : "MAN",
+					"strict" : false
+				},
+				{
+					"name" : "AUTO",
+					"strict" : false
+				},
+				{
+					"name" : "SEC",
+					"strict" : false
+				},
+				{
+					"name" : "dal2",
+					"strict" : false
+				},
+				{
+					"name" : "dal1",
+					"strict" : false
+				},
+				{
+					"name" : "dal0",
+					"strict" : false
+				},
+				{
+					"name" : "dal4",
+					"strict" : false
+				},
+				{
+					"name" : "dal5",
+					"strict" : false
+				},
+				{
+					"name" : "dal6",
+					"strict" : false
+				},
+				{
+					"name" : "dal7",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

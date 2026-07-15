@@ -1,0 +1,604 @@
+Analysis & Synthesis report for SAP_BR
+Tue Jul 14 21:50:01 2026
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jul 14 21:50:01 2026       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; SAP_BR                                      ;
+; Top-level Entity Name              ; SAP_BR                                      ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 540                                         ;
+;     Total combinational functions  ; 389                                         ;
+;     Dedicated logic registers      ; 173                                         ;
+; Total registers                    ; 173                                         ;
+; Total pins                         ; 30                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M08DAF484C8G     ;                    ;
+; Top-level entity name                                            ; SAP_BR             ; SAP_BR             ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
++-------------------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                             ; Library ;
++-------------------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+---------+
+; SAP_BR.bdf                                ; yes             ; User Block Diagram/Schematic File        ; C:/Users/Iury/Documents/SAP_BR/SAP_BR.bdf                                ;         ;
+; registrador_mar.bdf                       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/registrador_mar.bdf                       ;         ;
+; ci74ls157_mux.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/ci74ls157_mux.bdf                         ;         ;
+; ci74ls173a_registrador_tristate.bdf       ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/ci74ls173a_registrador_tristate.bdf       ;         ;
+; registrador_a.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/registrador_a.bdf                         ;         ;
+; octal_buffer_tri.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/octal_buffer_tri.bdf                      ;         ;
+; ula.bdf                                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/ula.bdf                                   ;         ;
+; ci74244_buffer_tristate_unidirecional.bdf ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/ci74244_buffer_tristate_unidirecional.bdf ;         ;
+; ci74ls153.bdf                             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/ci74ls153.bdf                             ;         ;
+; somadorcompleto4bits.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/somadorcompleto4bits.bdf                  ;         ;
+; controller.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/controller.bdf                            ;         ;
+; contadoremanel.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/contadoremanel.bdf                        ;         ;
+; ci74f189_decordificador.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/ci74f189_decordificador.bdf               ;         ;
+; registrador_de_instrucoes.bdf             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/registrador_de_instrucoes.bdf             ;         ;
+; memoria_ram_completa.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/memoria_ram_completa.bdf                  ;         ;
+; memoriaram.bdf                            ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/memoriaram.bdf                            ;         ;
+; celularam.bdf                             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/celularam.bdf                             ;         ;
+; clock_controller.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/clock_controller.bdf                      ;         ;
+; contador_de_programa.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/contador_de_programa.bdf                  ;         ;
+; entrada_tri_saida.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/entrada_tri_saida.bdf                     ;         ;
+; ci74ls161.bdf                             ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/ci74ls161.bdf                             ;         ;
+; registrador_b.bdf                         ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/registrador_b.bdf                         ;         ;
+; registrador_de_saida.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/Iury/Documents/SAP_BR/registrador_de_saida.bdf                  ;         ;
++-------------------------------------------+-----------------+------------------------------------------+--------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                    ;
++---------------------------------------------+----------------------------------+
+; Resource                                    ; Usage                            ;
++---------------------------------------------+----------------------------------+
+; Estimated Total logic elements              ; 540                              ;
+;                                             ;                                  ;
+; Total combinational functions               ; 389                              ;
+; Logic element usage by number of LUT inputs ;                                  ;
+;     -- 4 input functions                    ; 198                              ;
+;     -- 3 input functions                    ; 35                               ;
+;     -- <=2 input functions                  ; 156                              ;
+;                                             ;                                  ;
+; Logic elements by mode                      ;                                  ;
+;     -- normal mode                          ; 389                              ;
+;     -- arithmetic mode                      ; 0                                ;
+;                                             ;                                  ;
+; Total registers                             ; 173                              ;
+;     -- Dedicated logic registers            ; 173                              ;
+;     -- I/O registers                        ; 0                                ;
+;                                             ;                                  ;
+; I/O pins                                    ; 30                               ;
+;                                             ;                                  ;
+; Embedded Multiplier 9-bit elements          ; 0                                ;
+;                                             ;                                  ;
+; Maximum fan-out node                        ; Memoria_RAM_completa:inst2|inst4 ;
+; Maximum fan-out                             ; 149                              ;
+; Total fan-out                               ; 1658                             ;
+; Average fan-out                             ; 2.67                             ;
++---------------------------------------------+----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                               ;
++------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------+---------------------------------------+--------------+
+; Compilation Hierarchy Node                           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                            ; Entity Name                           ; Library Name ;
++------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------+---------------------------------------+--------------+
+; |SAP_BR                                              ; 389 (0)             ; 173 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 30   ; 0            ; 0          ; |SAP_BR                                                                        ; SAP_BR                                ; work         ;
+;    |Clock_Controller:inst4|                          ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Clock_Controller:inst4                                                 ; Clock_Controller                      ; work         ;
+;    |Contador_de_programa:inst1|                      ; 8 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Contador_de_programa:inst1                                             ; Contador_de_programa                  ; work         ;
+;       |CI74LS161:inst22|                             ; 8 (8)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Contador_de_programa:inst1|CI74LS161:inst22                            ; CI74LS161                             ; work         ;
+;    |Controller:inst98|                               ; 30 (17)             ; 5 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Controller:inst98                                                      ; Controller                            ; work         ;
+;       |CI74F189_Decordificador:inst10|               ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Controller:inst98|CI74F189_Decordificador:inst10                       ; CI74F189_Decordificador               ; work         ;
+;       |ContadorEmAnel:inst1|                         ; 2 (2)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Controller:inst98|ContadorEmAnel:inst1                                 ; ContadorEmAnel                        ; work         ;
+;    |Memoria_RAM_completa:inst2|                      ; 261 (1)             ; 128 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2                                             ; Memoria_RAM_completa                  ; work         ;
+;       |CI74244_Buffer_Tristate_Unidirecional:inst3|  ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|CI74244_Buffer_Tristate_Unidirecional:inst3 ; CI74244_Buffer_Tristate_Unidirecional ; work         ;
+;       |CI74LS157_MUX:inst1|                          ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|CI74LS157_MUX:inst1                         ; CI74LS157_MUX                         ; work         ;
+;       |CI74LS157_MUX:inst|                           ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|CI74LS157_MUX:inst                          ; CI74LS157_MUX                         ; work         ;
+;       |MemoriaRam:inst2|                             ; 246 (16)            ; 128 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2                            ; MemoriaRam                            ; work         ;
+;          |CelulaRam:inst151|                         ; 12 (12)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst151          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst152|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst152          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst153|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst153          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst154|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst154          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst155|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst155          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst156|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst156          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst157|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst157          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst158|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst158          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst159|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst159          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst160|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst160          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst161|                         ; 11 (11)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst161          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst162|                         ; 11 (11)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst162          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst163|                         ; 11 (11)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst163          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst164|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst164          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst165|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst165          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst166|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst166          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst167|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst167          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst168|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst168          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst169|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst169          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst170|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst170          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst171|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst171          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst172|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst172          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst173|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst173          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst174|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst174          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst175|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst175          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst176|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst176          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst177|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst177          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst178|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst178          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst179|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst179          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst180|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst180          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst181|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst181          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst182|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst182          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst183|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst183          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst184|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst184          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst185|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst185          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst186|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst186          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst187|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst187          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst188|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst188          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst189|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst189          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst190|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst190          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst191|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst191          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst192|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst192          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst193|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst193          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst194|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst194          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst195|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst195          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst196|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst196          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst197|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst197          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst198|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst198          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst199|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst199          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst200|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst200          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst201|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst201          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst202|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst202          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst203|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst203          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst204|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst204          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst205|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst205          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst206|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst206          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst207|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst207          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst208|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst208          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst209|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst209          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst210|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst210          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst211|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst211          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst212|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst212          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst213|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst213          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst214|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst214          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst215|                         ; 19 (19)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst215          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst216|                         ; 9 (9)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst216          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst217|                         ; 11 (11)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst217          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst218|                         ; 11 (11)             ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst218          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst219|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst219          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst220|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst220          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst221|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst221          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst222|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst222          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst223|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst223          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst224|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst224          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst225|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst225          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst226|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst226          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst227|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst227          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst228|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst228          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst229|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst229          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst230|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst230          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst231|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst231          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst232|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst232          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst233|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst233          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst234|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst234          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst235|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst235          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst236|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst236          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst237|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst237          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst238|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst238          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst239|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst239          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst240|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst240          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst241|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst241          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst242|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst242          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst243|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst243          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst244|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst244          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst245|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst245          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst246|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst246          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst247|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst247          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst248|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst248          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst249|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst249          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst250|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst250          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst251|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst251          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst252|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst252          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst253|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst253          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst254|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst254          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst255|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst255          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst256|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst256          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst257|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst257          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst258|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst258          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst259|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst259          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst260|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst260          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst261|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst261          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst262|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst262          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst263|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst263          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst264|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst264          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst265|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst265          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst266|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst266          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst267|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst267          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst268|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst268          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst269|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst269          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst270|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst270          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst271|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst271          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst272|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst272          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst273|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst273          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst274|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst274          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst275|                         ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst275          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst276|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst276          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst277|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst277          ; CelulaRam                             ; work         ;
+;          |CelulaRam:inst278|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst278          ; CelulaRam                             ; work         ;
+;    |Registrador_A:inst9|                             ; 27 (0)              ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_A:inst9                                                    ; Registrador_A                         ; work         ;
+;       |CI74LS173A_REGISTRADOR_TRISTATE:inst2|        ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_A:inst9|CI74LS173A_REGISTRADOR_TRISTATE:inst2              ; CI74LS173A_REGISTRADOR_TRISTATE       ; work         ;
+;       |CI74LS173A_REGISTRADOR_TRISTATE:inst|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_A:inst9|CI74LS173A_REGISTRADOR_TRISTATE:inst               ; CI74LS173A_REGISTRADOR_TRISTATE       ; work         ;
+;       |Octal_Buffer_Tri:inst6|                       ; 27 (27)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_A:inst9|Octal_Buffer_Tri:inst6                             ; Octal_Buffer_Tri                      ; work         ;
+;    |Registrador_B:inst8|                             ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_B:inst8                                                    ; Registrador_B                         ; work         ;
+;       |CI74LS173A_REGISTRADOR_TRISTATE:inst2|        ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_B:inst8|CI74LS173A_REGISTRADOR_TRISTATE:inst2              ; CI74LS173A_REGISTRADOR_TRISTATE       ; work         ;
+;       |CI74LS173A_REGISTRADOR_TRISTATE:inst|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_B:inst8|CI74LS173A_REGISTRADOR_TRISTATE:inst               ; CI74LS173A_REGISTRADOR_TRISTATE       ; work         ;
+;    |Registrador_MAR:inst6|                           ; 4 (0)               ; 4 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_MAR:inst6                                                  ; Registrador_MAR                       ; work         ;
+;       |CI74LS157_MUX:inst99|                         ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_MAR:inst6|CI74LS157_MUX:inst99                             ; CI74LS157_MUX                         ; work         ;
+;       |CI74LS173A_REGISTRADOR_TRISTATE:inst|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_MAR:inst6|CI74LS173A_REGISTRADOR_TRISTATE:inst             ; CI74LS173A_REGISTRADOR_TRISTATE       ; work         ;
+;    |Registrador_de_Instrucoes:inst7|                 ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_de_Instrucoes:inst7                                        ; Registrador_de_Instrucoes             ; work         ;
+;       |CI74LS173A_REGISTRADOR_TRISTATE:inst2|        ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_de_Instrucoes:inst7|CI74LS173A_REGISTRADOR_TRISTATE:inst2  ; CI74LS173A_REGISTRADOR_TRISTATE       ; work         ;
+;       |CI74LS173A_REGISTRADOR_TRISTATE:inst|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_de_Instrucoes:inst7|CI74LS173A_REGISTRADOR_TRISTATE:inst   ; CI74LS173A_REGISTRADOR_TRISTATE       ; work         ;
+;    |Registrador_de_Saida:inst5|                      ; 0 (0)               ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_de_Saida:inst5                                             ; Registrador_de_Saida                  ; work         ;
+;       |CI74LS173A_REGISTRADOR_TRISTATE:inst2|        ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst2       ; CI74LS173A_REGISTRADOR_TRISTATE       ; work         ;
+;       |CI74LS173A_REGISTRADOR_TRISTATE:inst|         ; 0 (0)               ; 4 (4)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst        ; CI74LS173A_REGISTRADOR_TRISTATE       ; work         ;
+;    |ULA:ULA|                                         ; 57 (3)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|ULA:ULA                                                                ; ULA                                   ; work         ;
+;       |CI74244_Buffer_Tristate_Unidirecional:inst56| ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|ULA:ULA|CI74244_Buffer_Tristate_Unidirecional:inst56                   ; CI74244_Buffer_Tristate_Unidirecional ; work         ;
+;       |CI74LS153:inst42|                             ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|ULA:ULA|CI74LS153:inst42                                               ; CI74LS153                             ; work         ;
+;       |CI74LS153:inst48|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|ULA:ULA|CI74LS153:inst48                                               ; CI74LS153                             ; work         ;
+;       |CI74LS153:inst49|                             ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|ULA:ULA|CI74LS153:inst49                                               ; CI74LS153                             ; work         ;
+;       |CI74LS153:inst50|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|ULA:ULA|CI74LS153:inst50                                               ; CI74LS153                             ; work         ;
+;       |SomadorCompleto4bits:inst1|                   ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|ULA:ULA|SomadorCompleto4bits:inst1                                     ; SomadorCompleto4bits                  ; work         ;
+;       |SomadorCompleto4bits:inst|                    ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |SAP_BR|ULA:ULA|SomadorCompleto4bits:inst                                      ; SomadorCompleto4bits                  ; work         ;
++------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------------------+---------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 173   ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 25    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 36    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 30                          ;
+; cycloneiii_ff         ; 173                         ;
+;     CLR               ; 5                           ;
+;     ENA               ; 16                          ;
+;     ENA CLR           ; 20                          ;
+;     SCLR              ; 2                           ;
+;     plain             ; 130                         ;
+; cycloneiii_lcell_comb ; 389                         ;
+;     normal            ; 389                         ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 154                         ;
+;         3 data inputs ; 35                          ;
+;         4 data inputs ; 198                         ;
+;                       ;                             ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 6.26                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Tue Jul 14 21:49:53 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SAP_BR -c SAP_BR
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file sap_br.bdf
+    Info (12023): Found entity 1: SAP_BR
+Info (12127): Elaborating entity "SAP_BR" for the top level hierarchy
+Warning (12125): Using design file registrador_mar.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Registrador_MAR
+Info (12128): Elaborating entity "REGISTRADOR_MAR" for hierarchy "REGISTRADOR_MAR:inst6"
+Warning (275011): Block or symbol "GND" of instance "inst5" overlaps another block or symbol
+Warning (12125): Using design file ci74ls157_mux.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CI74LS157_MUX
+Info (12128): Elaborating entity "CI74LS157_MUX" for hierarchy "REGISTRADOR_MAR:inst6|CI74LS157_MUX:inst99"
+Warning (12125): Using design file ci74ls173a_registrador_tristate.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CI74LS173A_REGISTRADOR_TRISTATE
+Info (12128): Elaborating entity "CI74LS173A_REGISTRADOR_TRISTATE" for hierarchy "REGISTRADOR_MAR:inst6|CI74LS173A_REGISTRADOR_TRISTATE:inst"
+Warning (12125): Using design file registrador_a.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Registrador_A
+Info (12128): Elaborating entity "REGISTRADOR_A" for hierarchy "REGISTRADOR_A:inst9"
+Warning (12125): Using design file octal_buffer_tri.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Octal_Buffer_Tri
+Info (12128): Elaborating entity "OCTAL_BUFFER_TRI" for hierarchy "REGISTRADOR_A:inst9|OCTAL_BUFFER_TRI:inst6"
+Warning (12125): Using design file ula.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ULA
+Info (12128): Elaborating entity "ULA" for hierarchy "ULA:ULA"
+Warning (12125): Using design file ci74244_buffer_tristate_unidirecional.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CI74244_Buffer_Tristate_Unidirecional
+Info (12128): Elaborating entity "CI74244_Buffer_Tristate_Unidirecional" for hierarchy "ULA:ULA|CI74244_Buffer_Tristate_Unidirecional:inst56"
+Warning (12125): Using design file ci74ls153.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CI74LS153
+Info (12128): Elaborating entity "CI74LS153" for hierarchy "ULA:ULA|CI74LS153:inst50"
+Warning (12125): Using design file somadorcompleto4bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: SomadorCompleto4bits
+Info (12128): Elaborating entity "SomadorCompleto4bits" for hierarchy "ULA:ULA|SomadorCompleto4bits:inst1"
+Warning (12125): Using design file controller.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Controller
+Info (12128): Elaborating entity "CONTROLLER" for hierarchy "CONTROLLER:inst98"
+Warning (12125): Using design file contadoremanel.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ContadorEmAnel
+Info (12128): Elaborating entity "ContadorEmAnel" for hierarchy "CONTROLLER:inst98|ContadorEmAnel:inst1"
+Warning (12125): Using design file ci74f189_decordificador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CI74F189_Decordificador
+Info (12128): Elaborating entity "CI74F189_Decordificador" for hierarchy "CONTROLLER:inst98|CI74F189_Decordificador:inst10"
+Warning (12125): Using design file registrador_de_instrucoes.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Registrador_de_Instrucoes
+Info (12128): Elaborating entity "Registrador_de_Instrucoes" for hierarchy "Registrador_de_Instrucoes:inst7"
+Warning (12125): Using design file memoria_ram_completa.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Memoria_RAM_completa
+Info (12128): Elaborating entity "Memoria_RAM_completa" for hierarchy "Memoria_RAM_completa:inst2"
+Warning (12125): Using design file memoriaram.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: MemoriaRam
+Info (12128): Elaborating entity "MemoriaRam" for hierarchy "Memoria_RAM_completa:inst2|MemoriaRam:inst2"
+Warning (12125): Using design file celularam.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CelulaRam
+Info (12128): Elaborating entity "CelulaRam" for hierarchy "Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst218"
+Warning (12125): Using design file clock_controller.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Clock_Controller
+Info (12128): Elaborating entity "Clock_Controller" for hierarchy "Clock_Controller:inst4"
+Warning (12125): Using design file contador_de_programa.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Contador_de_programa
+Info (12128): Elaborating entity "Contador_de_programa" for hierarchy "Contador_de_programa:inst1"
+Warning (12125): Using design file entrada_tri_saida.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Entrada_Tri_Saida
+Info (12128): Elaborating entity "Entrada_Tri_Saida" for hierarchy "Contador_de_programa:inst1|Entrada_Tri_Saida:inst1"
+Warning (12125): Using design file ci74ls161.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: CI74LS161
+Info (12128): Elaborating entity "CI74LS161" for hierarchy "Contador_de_programa:inst1|CI74LS161:inst22"
+Warning (12125): Using design file registrador_b.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Registrador_B
+Info (12128): Elaborating entity "REGISTRADOR_B" for hierarchy "REGISTRADOR_B:inst8"
+Warning (12125): Using design file registrador_de_saida.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Registrador_de_Saida
+Info (12128): Elaborating entity "REGISTRADOR_DE_SAIDA" for hierarchy "REGISTRADOR_DE_SAIDA:inst5"
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "Registrador_B:inst8|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst96" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_B:inst8|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst97" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_B:inst8|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst98" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_B:inst8|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst99" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_B:inst8|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst96" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_B:inst8|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst97" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_B:inst8|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst98" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_B:inst8|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst99" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_de_Instrucoes:inst7|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst96" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_de_Instrucoes:inst7|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst97" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_de_Instrucoes:inst7|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst98" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_de_Instrucoes:inst7|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst99" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_MAR:inst6|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst96" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_MAR:inst6|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst97" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_MAR:inst6|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst98" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "Registrador_MAR:inst6|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst99" feeding internal logic into a wire
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer Clock_Controller:inst4|inst3~0
+    Warning (19017): Found clock multiplexer Registrador_MAR:inst6|CI74LS157_MUX:inst99|inst14~0
+    Warning (19017): Found clock multiplexer Registrador_MAR:inst6|CI74LS157_MUX:inst99|inst11~0
+    Warning (19017): Found clock multiplexer Registrador_MAR:inst6|CI74LS157_MUX:inst99|inst8~0
+    Warning (19017): Found clock multiplexer Registrador_MAR:inst6|CI74LS157_MUX:inst99|inst5~0
+Warning (13044): Always-enabled tri-state buffer(s) removed
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst99" to the node "LED0" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst98" to the node "LED1" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst97" to the node "LED2" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst96" to the node "LED3" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst99" to the node "LED4" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst98" to the node "LED5" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst97" to the node "LED6" into a wire
+    Warning (13045): Converted the fanout from the always-enabled tri-state buffer "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst96" to the node "LED7" into a wire
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst96" to the node "ULA:ULA|inst13" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst97" to the node "ULA:ULA|inst12" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst98" to the node "ULA:ULA|inst11" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|CI74LS173A_REGISTRADOR_TRISTATE:inst2|inst99" to the node "ULA:ULA|inst10" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst99" to the node "ULA:ULA|inst14" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst98" to the node "ULA:ULA|inst15" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst97" to the node "ULA:ULA|inst16" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst96" to the node "ULA:ULA|inst17" into an OR gate
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|Octal_Buffer_Tri:inst6|inst62" to the node "Registrador_MAR:inst6|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst15" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|Octal_Buffer_Tri:inst6|inst63" to the node "Registrador_MAR:inst6|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst16" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|Octal_Buffer_Tri:inst6|inst64" to the node "Registrador_MAR:inst6|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst17" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|Octal_Buffer_Tri:inst6|inst65" to the node "Registrador_MAR:inst6|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst18" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|Octal_Buffer_Tri:inst6|inst61" to the node "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst18" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|Octal_Buffer_Tri:inst6|inst60" to the node "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst17" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|Octal_Buffer_Tri:inst6|inst59" to the node "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst16" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Registrador_A:inst9|Octal_Buffer_Tri:inst6|inst58" to the node "Registrador_de_Saida:inst5|CI74LS173A_REGISTRADOR_TRISTATE:inst|inst15" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst215|inst4" to the node "Memoria_RAM_completa:inst2|CI74244_Buffer_Tristate_Unidirecional:inst3|instTri4" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst216|inst4" to the node "Memoria_RAM_completa:inst2|CI74244_Buffer_Tristate_Unidirecional:inst3|instTri3" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst217|inst4" to the node "Memoria_RAM_completa:inst2|CI74244_Buffer_Tristate_Unidirecional:inst3|instTri2" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst218|inst4" to the node "Memoria_RAM_completa:inst2|CI74244_Buffer_Tristate_Unidirecional:inst3|instTri1" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst163|inst4" to the node "Memoria_RAM_completa:inst2|CI74244_Buffer_Tristate_Unidirecional:inst3|instTri5" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst162|inst4" to the node "Memoria_RAM_completa:inst2|CI74244_Buffer_Tristate_Unidirecional:inst3|instTri6" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst161|inst4" to the node "Memoria_RAM_completa:inst2|CI74244_Buffer_Tristate_Unidirecional:inst3|instTri7" into an OR gate
+    Warning (13047): Converted the fan-out from the tri-state buffer "Memoria_RAM_completa:inst2|MemoriaRam:inst2|CelulaRam:inst151|inst4" to the node "Memoria_RAM_completa:inst2|CI74244_Buffer_Tristate_Unidirecional:inst3|instTri8" into an OR gate
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 586 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 556 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 82 warnings
+    Info: Peak virtual memory: 4852 megabytes
+    Info: Processing ended: Tue Jul 14 21:50:01 2026
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:18
+
+
