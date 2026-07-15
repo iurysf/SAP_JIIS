@@ -1,0 +1,7 @@
+# vsim -c -L fiftyfivenm_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.SAP1_vlg_vec_tst -do "run 1399 ns; examine -radix binary LED7 LED6 LED5 LED4 LED3 LED2 LED1 LED0; examine -radix binary T1 T2 T3 T4 T5 T6; quit -f" 
+# Start time: 15:49:11 on Jul 15,2026
+# ** Error (suppressible): (vsim-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 15:49:11 on Jul 15,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

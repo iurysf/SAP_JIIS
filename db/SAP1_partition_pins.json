@@ -1,0 +1,169 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "T1",
+					"strict" : false
+				},
+				{
+					"name" : "ACC2",
+					"strict" : false
+				},
+				{
+					"name" : "ACC1",
+					"strict" : false
+				},
+				{
+					"name" : "ACC0",
+					"strict" : false
+				},
+				{
+					"name" : "ACC3",
+					"strict" : false
+				},
+				{
+					"name" : "T2",
+					"strict" : false
+				},
+				{
+					"name" : "T3",
+					"strict" : false
+				},
+				{
+					"name" : "T4",
+					"strict" : false
+				},
+				{
+					"name" : "T6",
+					"strict" : false
+				},
+				{
+					"name" : "T5",
+					"strict" : false
+				},
+				{
+					"name" : "LED4",
+					"strict" : false
+				},
+				{
+					"name" : "LED5",
+					"strict" : false
+				},
+				{
+					"name" : "LED6",
+					"strict" : false
+				},
+				{
+					"name" : "LED7",
+					"strict" : false
+				},
+				{
+					"name" : "LED0",
+					"strict" : false
+				},
+				{
+					"name" : "LED1",
+					"strict" : false
+				},
+				{
+					"name" : "LED2",
+					"strict" : false
+				},
+				{
+					"name" : "LED3",
+					"strict" : false
+				},
+				{
+					"name" : "RB0",
+					"strict" : false
+				},
+				{
+					"name" : "RB1",
+					"strict" : false
+				},
+				{
+					"name" : "RB2",
+					"strict" : false
+				},
+				{
+					"name" : "RB3",
+					"strict" : false
+				},
+				{
+					"name" : "Limpar_Iniciar",
+					"strict" : false
+				},
+				{
+					"name" : "LeituraEscrita",
+					"strict" : false
+				},
+				{
+					"name" : "run_prog",
+					"strict" : false
+				},
+				{
+					"name" : "A3",
+					"strict" : false
+				},
+				{
+					"name" : "A2",
+					"strict" : false
+				},
+				{
+					"name" : "A1",
+					"strict" : false
+				},
+				{
+					"name" : "A0",
+					"strict" : false
+				},
+				{
+					"name" : "Etapa_unica",
+					"strict" : false
+				},
+				{
+					"name" : "Manual_Automatico",
+					"strict" : false
+				},
+				{
+					"name" : "D2",
+					"strict" : false
+				},
+				{
+					"name" : "D1",
+					"strict" : false
+				},
+				{
+					"name" : "D0",
+					"strict" : false
+				},
+				{
+					"name" : "D3",
+					"strict" : false
+				},
+				{
+					"name" : "D4",
+					"strict" : false
+				},
+				{
+					"name" : "D5",
+					"strict" : false
+				},
+				{
+					"name" : "D6",
+					"strict" : false
+				},
+				{
+					"name" : "D7",
+					"strict" : false
+				},
+				{
+					"name" : "Sinal_clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

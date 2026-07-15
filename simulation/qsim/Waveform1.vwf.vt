@@ -19,322 +19,120 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "02/09/2026 20:34:08"
+// Generated on "02/05/2026 11:20:29"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          SAP_BR
+// Verilog Test Bench (with test vectors) for design :                          ci74157
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module SAP_BR_vlg_vec_tst();
+module ci74157_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg AUTO;
-reg dal0;
-reg dal1;
-reg dal2;
-reg dal3;
-reg dal4;
-reg dal5;
-reg dal6;
-reg dal7;
-reg MAN;
-reg mar_dip0;
-reg mar_dip1;
-reg mar_dip2;
-reg mar_dip3;
-reg PROGRAM_RUN_n;
-reg RESET;
-reg SEC;
-reg WR_BUTTON;
+reg E;
+reg I0a;
+reg I0b;
+reg I0c;
+reg I0d;
+reg I1a;
+reg I1b;
+reg I1c;
+reg I1d;
+reg S;
 // wires                                               
-wire addr_0;
-wire addr_1;
-wire addr_2;
-wire addr_3;
-wire LED0;
-wire LED1;
-wire LED2;
-wire LED3;
-wire LED4;
-wire LED5;
-wire LED6;
-wire LED7;
+wire Za;
+wire Zb;
+wire Zc;
+wire Zd;
 
 // assign statements (if any)                          
-SAP_BR i1 (
+ci74157 i1 (
 // port map - connection between master ports and signals/registers   
-	.addr_0(addr_0),
-	.addr_1(addr_1),
-	.addr_2(addr_2),
-	.addr_3(addr_3),
-	.AUTO(AUTO),
-	.dal0(dal0),
-	.dal1(dal1),
-	.dal2(dal2),
-	.dal3(dal3),
-	.dal4(dal4),
-	.dal5(dal5),
-	.dal6(dal6),
-	.dal7(dal7),
-	.LED0(LED0),
-	.LED1(LED1),
-	.LED2(LED2),
-	.LED3(LED3),
-	.LED4(LED4),
-	.LED5(LED5),
-	.LED6(LED6),
-	.LED7(LED7),
-	.MAN(MAN),
-	.mar_dip0(mar_dip0),
-	.mar_dip1(mar_dip1),
-	.mar_dip2(mar_dip2),
-	.mar_dip3(mar_dip3),
-	.PROGRAM_RUN_n(PROGRAM_RUN_n),
-	.RESET(RESET),
-	.SEC(SEC),
-	.WR_BUTTON(WR_BUTTON)
+	.E(E),
+	.I0a(I0a),
+	.I0b(I0b),
+	.I0c(I0c),
+	.I0d(I0d),
+	.I1a(I1a),
+	.I1b(I1b),
+	.I1c(I1c),
+	.I1d(I1d),
+	.S(S),
+	.Za(Za),
+	.Zb(Zb),
+	.Zc(Zc),
+	.Zd(Zd)
 );
 initial 
 begin 
-#2000000 $finish;
+#1000000 $finish;
 end 
 
-// RESET
+// E
 initial
 begin
-	RESET = 1'b0;
+	E = 1'b0;
 end 
 
-// MAN
+// I0a
 initial
 begin
-	MAN = 1'b0;
+	I0a = 1'b1;
 end 
 
-// SEC
+// I0b
 initial
 begin
-	SEC = 1'b1;
+	I0b = 1'b1;
 end 
 
-// AUTO
+// I0c
 initial
 begin
-	AUTO = 1'b0;
-	AUTO = #770000 1'b1;
-	# 10000;
-	repeat(61)
+	I0c = 1'b1;
+end 
+
+// I0d
+initial
+begin
+	I0d = 1'b1;
+end 
+
+// I1a
+initial
+begin
+	I1a = 1'b1;
+end 
+
+// I1b
+initial
+begin
+	I1b = 1'b1;
+end 
+
+// I1c
+initial
+begin
+	I1c = 1'b1;
+end 
+
+// I1d
+initial
+begin
+	I1d = 1'b1;
+end 
+
+// S
+initial
+begin
+	repeat(2)
 	begin
-		AUTO = 1'b0;
-		AUTO = #10000 1'b1;
-		# 10000;
+		S = 1'b0;
+		S = #240000 1'b1;
+		# 240000;
 	end
-end 
-
-// PROGRAM_RUN_n
-initial
-begin
-	PROGRAM_RUN_n = 1'b0;
-	PROGRAM_RUN_n = #760000 1'b1;
-end 
-
-// mar_dip3
-initial
-begin
-	mar_dip3 = 1'b0;
-	mar_dip3 = #410000 1'b1;
-	mar_dip3 = #350000 1'b0;
-end 
-
-// mar_dip2
-initial
-begin
-	mar_dip2 = 1'b0;
-	mar_dip2 = #210000 1'b1;
-	mar_dip2 = #200000 1'b0;
-	mar_dip2 = #180000 1'b1;
-	mar_dip2 = #170000 1'b0;
-end 
-
-// mar_dip1
-initial
-begin
-	mar_dip1 = 1'b0;
-	mar_dip1 = #90000 1'b1;
-	mar_dip1 = #120000 1'b0;
-	mar_dip1 = #110000 1'b1;
-	mar_dip1 = #90000 1'b0;
-	mar_dip1 = #90000 1'b1;
-	mar_dip1 = #90000 1'b0;
-	mar_dip1 = #80000 1'b1;
-	mar_dip1 = #90000 1'b0;
-end 
-
-// mar_dip0
-initial
-begin
-	mar_dip0 = 1'b0;
-	mar_dip0 = #40000 1'b1;
-	mar_dip0 = #50000 1'b0;
-	mar_dip0 = #60000 1'b1;
-	mar_dip0 = #60000 1'b0;
-	mar_dip0 = #50000 1'b1;
-	mar_dip0 = #60000 1'b0;
-	mar_dip0 = #50000 1'b1;
-	mar_dip0 = #40000 1'b0;
-	mar_dip0 = #40000 1'b1;
-	mar_dip0 = #50000 1'b0;
-	mar_dip0 = #40000 1'b1;
-	mar_dip0 = #50000 1'b0;
-	mar_dip0 = #40000 1'b1;
-	mar_dip0 = #40000 1'b0;
-	mar_dip0 = #50000 1'b1;
-	mar_dip0 = #40000 1'b0;
-end 
-
-// dal7
-initial
-begin
-	dal7 = 1'b0;
-	dal7 = #40000 1'b1;
-	dal7 = #60000 1'b0;
-	dal7 = #60000 1'b1;
-	dal7 = #50000 1'b0;
-	dal7 = #50000 1'b1;
-	dal7 = #60000 1'b0;
-	dal7 = #50000 1'b1;
-	dal7 = #40000 1'b0;
-	dal7 = #40000 1'b1;
-	dal7 = #90000 1'b0;
-end 
-
-// dal6
-initial
-begin
-	dal6 = 1'b0;
-	dal6 = #40000 1'b1;
-	dal6 = #410000 1'b0;
-end 
-
-// dal5
-initial
-begin
-	dal5 = 1'b1;
-	dal5 = #100000 1'b0;
-	dal5 = #60000 1'b1;
-	dal5 = #50000 1'b0;
-	dal5 = #50000 1'b1;
-	dal5 = #60000 1'b0;
-	dal5 = #50000 1'b1;
-	dal5 = #40000 1'b0;
-	dal5 = #40000 1'b1;
-	dal5 = #50000 1'b0;
-end 
-
-// dal4
-initial
-begin
-	dal4 = 1'b0;
-	dal4 = #320000 1'b1;
-	dal4 = #50000 1'b0;
-	dal4 = #40000 1'b1;
-	dal4 = #40000 1'b0;
-	dal4 = #90000 1'b1;
-	dal4 = #40000 1'b0;
-end 
-
-// dal3
-initial
-begin
-	dal3 = 1'b0;
-	dal3 = #100000 1'b1;
-	dal3 = #60000 1'b0;
-	dal3 = #50000 1'b1;
-	dal3 = #50000 1'b0;
-	dal3 = #60000 1'b1;
-	dal3 = #50000 1'b0;
-	dal3 = #40000 1'b1;
-	dal3 = #40000 1'b0;
-	dal3 = #90000 1'b1;
-	dal3 = #40000 1'b0;
-	dal3 = #140000 1'b1;
-	dal3 = #40000 1'b0;
-end 
-
-// dal2
-initial
-begin
-	dal2 = 1'b0;
-	dal2 = #100000 1'b1;
-	dal2 = #60000 1'b0;
-	dal2 = #50000 1'b1;
-	dal2 = #50000 1'b0;
-	dal2 = #60000 1'b1;
-	dal2 = #50000 1'b0;
-	dal2 = #40000 1'b1;
-	dal2 = #40000 1'b0;
-	dal2 = #90000 1'b1;
-	dal2 = #40000 1'b0;
-	dal2 = #90000 1'b1;
-	dal2 = #50000 1'b0;
-end 
-
-// dal1
-initial
-begin
-	dal1 = 1'b0;
-	dal1 = #100000 1'b1;
-	dal1 = #60000 1'b0;
-	dal1 = #50000 1'b1;
-	dal1 = #50000 1'b0;
-	dal1 = #60000 1'b1;
-	dal1 = #50000 1'b0;
-	dal1 = #40000 1'b1;
-	dal1 = #40000 1'b0;
-	dal1 = #270000 1'b1;
-	dal1 = #40000 1'b0;
-end 
-
-// dal0
-initial
-begin
-	dal0 = 1'b0;
-	dal0 = #450000 1'b1;
-	dal0 = #50000 1'b0;
-	dal0 = #80000 1'b1;
-	dal0 = #40000 1'b0;
-	dal0 = #50000 1'b1;
-	dal0 = #50000 1'b0;
-end 
-
-// WR_BUTTON
-initial
-begin
-	WR_BUTTON = 1'b0;
-	WR_BUTTON = #10000 1'b1;
-	WR_BUTTON = #20000 1'b0;
-	WR_BUTTON = #20000 1'b1;
-	WR_BUTTON = #30000 1'b0;
-	WR_BUTTON = #40000 1'b1;
-	WR_BUTTON = #20000 1'b0;
-	WR_BUTTON = #40000 1'b1;
-	WR_BUTTON = #20000 1'b0;
-	WR_BUTTON = #30000 1'b1;
-	WR_BUTTON = #20000 1'b0;
-	WR_BUTTON = #30000 1'b1;
-	WR_BUTTON = #20000 1'b0;
-	WR_BUTTON = #30000 1'b1;
-	WR_BUTTON = #20000 1'b0;
-	WR_BUTTON = #30000 1'b1;
-	WR_BUTTON = #10000 1'b0;
-	WR_BUTTON = #30000 1'b1;
-	WR_BUTTON = #10000 1'b0;
-	WR_BUTTON = #30000 1'b1;
-	WR_BUTTON = #10000 1'b0;
-	WR_BUTTON = #220000 1'b1;
-	WR_BUTTON = #10000 1'b0;
+	S = 1'b0;
 end 
 endmodule
 

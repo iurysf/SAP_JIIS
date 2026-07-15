@@ -21,29 +21,29 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 128 112)
+	(rect 64 64 176 160)
 	(text "CelulaRam" (rect 5 0 68 19)(font "Intel Clear" (font_size 8)))
 	(text "inst" (rect 8 75 24 92)(font "Intel Clear" ))
 	(port
-		(pt 0 32)
+		(pt 0 64)
 		(input)
 		(text "WE" (rect 0 0 18 19)(font "Intel Clear" (font_size 8)))
-		(text "WE" (rect 21 27 39 46)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 32)(pt 16 32))
+		(text "WE" (rect 21 59 39 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 0 48)
 		(input)
 		(text "SELECT" (rect 0 0 46 19)(font "Intel Clear" (font_size 8)))
-		(text "SELECT" (rect 21 43 67 62)(font "Intel Clear" (font_size 8)))
+		(text "SELECT" (rect 16 40 62 59)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
-		(pt 0 64)
+		(pt 0 24)
 		(input)
 		(text "D" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
-		(text "D" (rect 21 59 30 78)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
+		(text "D" (rect 21 19 30 38)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 24)(pt 16 24))
 	)
 	(port
 		(pt 112 32)

@@ -1,0 +1,1746 @@
+|SAP1
+T1 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+Limpar_Iniciar => inst5.ACLR
+Limpar_Iniciar => inst4.ACLR
+Limpar_Iniciar => inst.ACLR
+Limpar_Iniciar => inst1.ACLR
+Limpar_Iniciar => inst2.ACLR
+Limpar_Iniciar => inst3.ACLR
+Limpar_Iniciar => inst108.ACLR
+Limpar_Iniciar => inst75.ACLR
+Limpar_Iniciar => inst76.ACLR
+Limpar_Iniciar => inst77.ACLR
+Limpar_Iniciar => inst78.ACLR
+Limpar_Iniciar => inst109.IN0
+run_prog => CI74157:inst42.S
+run_prog => inst120.IN1
+ACC2 <= CI74173:inst7.Q1
+ACC1 <= CI74173:inst7.Q2
+LeituraEscrita => RAM:inst106._WE
+LeituraEscrita => RAM:inst105._WE
+D0 => RAM:inst106.D3
+D1 => RAM:inst106.D2
+D2 => RAM:inst106.D1
+D3 => RAM:inst106.D0
+ACC0 <= CI74173:inst7.Q3
+ACC3 <= CI74173:inst7.Q0
+A3 => CI74157:inst42.D0
+A2 => CI74157:inst42.C0
+A1 => CI74157:inst42.B0
+A0 => CI74157:inst42.A0
+D4 => RAM:inst105.D3
+D5 => RAM:inst105.D2
+D6 => RAM:inst105.D1
+D7 => RAM:inst105.D0
+Sinal_clock => inst108.CLK
+Manual_Automatico => inst119.IN0
+Manual_Automatico => inst116.IN2
+Etapa_unica => inst116.IN1
+T2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+T3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+T4 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+T6 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+T5 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+LED4 <= CI74173:inst97.Q3
+LED5 <= CI74173:inst97.Q2
+LED6 <= CI74173:inst97.Q1
+LED7 <= CI74173:inst97.Q0
+LED0 <= CI74173:inst98.Q3
+LED1 <= CI74173:inst98.Q2
+LED2 <= CI74173:inst98.Q1
+LED3 <= CI74173:inst98.Q0
+RB0 <= obs_rb0.DB_MAX_OUTPUT_PORT_TYPE
+RB1 <= obs_rb1.DB_MAX_OUTPUT_PORT_TYPE
+RB2 <= obs_rb2.DB_MAX_OUTPUT_PORT_TYPE
+RB3 <= obs_rb3.DB_MAX_OUTPUT_PORT_TYPE
+VA0 => ~NO_FANOUT~
+VA1 => ~NO_FANOUT~
+VA2 => ~NO_FANOUT~
+VA3 => ~NO_FANOUT~
+
+
+|SAP1|CI74173:inst44
+Q0 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+MR => inst35.IN0
+CP => inst23.CLK
+CP => inst24.CLK
+CP => inst25.CLK
+CP => inst26.CLK
+D0 => inst1.IN0
+E1 => inst14.IN0
+E2 => inst15.IN0
+OE1 => inst18.IN0
+OE2 => inst20.IN0
+Q1 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst5.IN0
+Q2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst7.IN0
+Q3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst8.IN0
+
+
+|SAP1|ci7483:inst129
+S1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst12.IN0
+A1 => inst13.IN0
+B1 => inst12.IN1
+B1 => inst13.IN1
+C0 => inst14.IN0
+S2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst10.IN0
+A2 => inst11.IN0
+B2 => inst10.IN1
+B2 => inst11.IN1
+S3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst8.IN0
+A3 => instN9.IN0
+B3 => inst8.IN1
+B3 => instN9.IN1
+S4 <= instO.DB_MAX_OUTPUT_PORT_TYPE
+A4 => inst7.IN0
+A4 => inst9.IN0
+B4 => inst7.IN1
+B4 => inst9.IN1
+C4 <= instT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP1|CI74173:inst8
+Q0 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+MR => inst35.IN0
+CP => inst23.CLK
+CP => inst24.CLK
+CP => inst25.CLK
+CP => inst26.CLK
+D0 => inst1.IN0
+E1 => inst14.IN0
+E2 => inst15.IN0
+OE1 => inst18.IN0
+OE2 => inst20.IN0
+Q1 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst5.IN0
+Q2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst7.IN0
+Q3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst8.IN0
+
+
+|SAP1|CI74173:inst6
+Q0 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+MR => inst35.IN0
+CP => inst23.CLK
+CP => inst24.CLK
+CP => inst25.CLK
+CP => inst26.CLK
+D0 => inst1.IN0
+E1 => inst14.IN0
+E2 => inst15.IN0
+OE1 => inst18.IN0
+OE2 => inst20.IN0
+Q1 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst5.IN0
+Q2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst7.IN0
+Q3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst8.IN0
+
+
+|SAP1|RAM:inst105
+_O0 <= inst142.DB_MAX_OUTPUT_PORT_TYPE
+_WE => inst138.IN0
+_WE => inst144.IN1
+A3 => inst50.IN0
+A3 => inst.IN0
+A3 => inst8.IN0
+A3 => inst13.IN0
+A3 => inst17.IN0
+A3 => inst19.IN0
+A3 => inst23.IN0
+A3 => inst26.IN0
+A3 => inst29.IN0
+A3 => inst30.IN0
+A3 => inst34.IN0
+A3 => inst37.IN0
+A3 => inst40.IN0
+A3 => inst42.IN0
+A3 => inst45.IN0
+A3 => inst46.IN0
+A2 => inst50.IN1
+A2 => inst4.IN0
+A2 => inst9.IN0
+A2 => inst16.IN0
+A2 => inst11.IN0
+A2 => inst18.IN1
+A2 => inst22.IN1
+A2 => inst25.IN1
+A2 => inst28.IN1
+A2 => inst33.IN0
+A2 => inst35.IN0
+A2 => inst38.IN0
+A2 => inst41.IN0
+A2 => inst42.IN1
+A2 => inst45.IN1
+A2 => inst46.IN1
+A1 => inst50.IN2
+A1 => inst3.IN0
+A1 => inst10.IN0
+A1 => inst12.IN2
+A1 => inst15.IN2
+A1 => inst21.IN0
+A1 => inst24.IN0
+A1 => inst25.IN2
+A1 => inst28.IN2
+A1 => inst31.IN0
+A1 => inst36.IN0
+A1 => inst37.IN2
+A1 => inst40.IN2
+A1 => inst43.IN0
+A1 => inst47.IN0
+A1 => inst46.IN2
+A0 => inst50.IN3
+A0 => inst5.IN0
+A0 => inst7.IN3
+A0 => inst14.IN0
+A0 => inst15.IN3
+A0 => inst20.IN0
+A0 => inst22.IN3
+A0 => inst27.IN0
+A0 => inst28.IN3
+A0 => inst32.IN0
+A0 => inst34.IN3
+A0 => inst39.IN0
+A0 => inst40.IN3
+A0 => inst44.IN0
+A0 => inst45.IN3
+A0 => inst49.IN0
+_CS => inst136.IN0
+D0 => CelulaRam:inst65.D
+D0 => CelulaRam:inst137.D
+D0 => CelulaRam:inst135.D
+D0 => CelulaRam:inst125.D
+D0 => CelulaRam:inst124.D
+D0 => CelulaRam:inst118.D
+D0 => CelulaRam:inst117.D
+D0 => CelulaRam:inst110.D
+D0 => CelulaRam:inst108.D
+D0 => CelulaRam:inst92.D
+D0 => CelulaRam:inst91.D
+D0 => CelulaRam:inst87.D
+D0 => CelulaRam:inst83.D
+D0 => CelulaRam:inst78.D
+D0 => CelulaRam:inst73.D
+D0 => CelulaRam:inst69.D
+_O1 <= inst141.DB_MAX_OUTPUT_PORT_TYPE
+D1 => CelulaRam:inst64.D
+D1 => CelulaRam:inst68.D
+D1 => CelulaRam:inst72.D
+D1 => CelulaRam:inst76.D
+D1 => CelulaRam:inst82.D
+D1 => CelulaRam:inst86.D
+D1 => CelulaRam:inst90.D
+D1 => CelulaRam:inst93.D
+D1 => CelulaRam:inst107.D
+D1 => CelulaRam:inst111.D
+D1 => CelulaRam:inst116.D
+D1 => CelulaRam:inst119.D
+D1 => CelulaRam:inst123.D
+D1 => CelulaRam:inst127.D
+D1 => CelulaRam:inst132.D
+D1 => CelulaRam:inst134.D
+_O2 <= inst140.DB_MAX_OUTPUT_PORT_TYPE
+D2 => CelulaRam:inst63.D
+D2 => CelulaRam:inst67.D
+D2 => CelulaRam:inst71.D
+D2 => CelulaRam:inst75.D
+D2 => CelulaRam:inst81.D
+D2 => CelulaRam:inst85.D
+D2 => CelulaRam:inst89.D
+D2 => CelulaRam:inst94.D
+D2 => CelulaRam:inst106.D
+D2 => CelulaRam:inst112.D
+D2 => CelulaRam:inst115.D
+D2 => CelulaRam:inst109.D
+D2 => CelulaRam:inst122.D
+D2 => CelulaRam:inst128.D
+D2 => CelulaRam:inst131.D
+D2 => CelulaRam:inst133.D
+_O3 <= inst139.DB_MAX_OUTPUT_PORT_TYPE
+D3 => CelulaRam:inst62.D
+D3 => CelulaRam:inst66.D
+D3 => CelulaRam:inst70.D
+D3 => CelulaRam:inst74.D
+D3 => CelulaRam:inst80.D
+D3 => CelulaRam:inst84.D
+D3 => CelulaRam:inst88.D
+D3 => CelulaRam:inst95.D
+D3 => CelulaRam:inst105.D
+D3 => CelulaRam:inst113.D
+D3 => CelulaRam:inst114.D
+D3 => CelulaRam:inst120.D
+D3 => CelulaRam:inst121.D
+D3 => CelulaRam:inst129.D
+D3 => CelulaRam:inst130.D
+D3 => CelulaRam:inst126.D
+internal3 <= gdfx_temp0.DB_MAX_OUTPUT_PORT_TYPE
+internal2 <= gdfx_temp1.DB_MAX_OUTPUT_PORT_TYPE
+internal0 <= gdfx_temp2.DB_MAX_OUTPUT_PORT_TYPE
+internal1 <= gdfx_temp3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP1|RAM:inst105|CelulaRam:inst65
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst137
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst135
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst125
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst124
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst118
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst117
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst110
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst108
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst92
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst91
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst87
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst83
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst78
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst73
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst69
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst64
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst68
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst72
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst76
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst82
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst86
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst90
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst93
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst107
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst111
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst116
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst119
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst123
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst127
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst132
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst134
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst63
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst67
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst71
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst75
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst81
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst85
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst89
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst94
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst106
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst112
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst115
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst109
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst122
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst128
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst131
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst133
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst62
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst66
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst70
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst74
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst80
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst84
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst88
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst95
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst105
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst113
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst114
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst120
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst121
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst129
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst130
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst105|CelulaRam:inst126
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|ci74157:inst42
+Za <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+S => inst19.IN0
+S => inst14.IN0
+E => inst15.IN0
+E => inst18.IN0
+A0 => inst7.IN1
+A1 => inst6.IN1
+Zb <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+B0 => inst5.IN1
+B1 => inst4.IN1
+Zc <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+C0 => inst3.IN1
+C1 => inst2.IN1
+Zd <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D0 => inst1.IN1
+D1 => inst.IN1
+
+
+|SAP1|CI74173:inst43
+Q0 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+MR => inst35.IN0
+CP => inst23.CLK
+CP => inst24.CLK
+CP => inst25.CLK
+CP => inst26.CLK
+D0 => inst1.IN0
+E1 => inst14.IN0
+E2 => inst15.IN0
+OE1 => inst18.IN0
+OE2 => inst20.IN0
+Q1 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst5.IN0
+Q2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst7.IN0
+Q3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst8.IN0
+
+
+|SAP1|ci7483:inst130
+S1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst12.IN0
+A1 => inst13.IN0
+B1 => inst12.IN1
+B1 => inst13.IN1
+C0 => inst14.IN0
+S2 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst10.IN0
+A2 => inst11.IN0
+B2 => inst10.IN1
+B2 => inst11.IN1
+S3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst8.IN0
+A3 => instN9.IN0
+B3 => inst8.IN1
+B3 => instN9.IN1
+S4 <= instO.DB_MAX_OUTPUT_PORT_TYPE
+A4 => inst7.IN0
+A4 => inst9.IN0
+B4 => inst7.IN1
+B4 => inst9.IN1
+C4 <= instT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP1|CI74173:inst9
+Q0 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+MR => inst35.IN0
+CP => inst23.CLK
+CP => inst24.CLK
+CP => inst25.CLK
+CP => inst26.CLK
+D0 => inst1.IN0
+E1 => inst14.IN0
+E2 => inst15.IN0
+OE1 => inst18.IN0
+OE2 => inst20.IN0
+Q1 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst5.IN0
+Q2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst7.IN0
+Q3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst8.IN0
+
+
+|SAP1|CI74173:inst7
+Q0 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+MR => inst35.IN0
+CP => inst23.CLK
+CP => inst24.CLK
+CP => inst25.CLK
+CP => inst26.CLK
+D0 => inst1.IN0
+E1 => inst14.IN0
+E2 => inst15.IN0
+OE1 => inst18.IN0
+OE2 => inst20.IN0
+Q1 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst5.IN0
+Q2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst7.IN0
+Q3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst8.IN0
+
+
+|SAP1|RAM:inst106
+_O0 <= inst142.DB_MAX_OUTPUT_PORT_TYPE
+_WE => inst138.IN0
+_WE => inst144.IN1
+A3 => inst50.IN0
+A3 => inst.IN0
+A3 => inst8.IN0
+A3 => inst13.IN0
+A3 => inst17.IN0
+A3 => inst19.IN0
+A3 => inst23.IN0
+A3 => inst26.IN0
+A3 => inst29.IN0
+A3 => inst30.IN0
+A3 => inst34.IN0
+A3 => inst37.IN0
+A3 => inst40.IN0
+A3 => inst42.IN0
+A3 => inst45.IN0
+A3 => inst46.IN0
+A2 => inst50.IN1
+A2 => inst4.IN0
+A2 => inst9.IN0
+A2 => inst16.IN0
+A2 => inst11.IN0
+A2 => inst18.IN1
+A2 => inst22.IN1
+A2 => inst25.IN1
+A2 => inst28.IN1
+A2 => inst33.IN0
+A2 => inst35.IN0
+A2 => inst38.IN0
+A2 => inst41.IN0
+A2 => inst42.IN1
+A2 => inst45.IN1
+A2 => inst46.IN1
+A1 => inst50.IN2
+A1 => inst3.IN0
+A1 => inst10.IN0
+A1 => inst12.IN2
+A1 => inst15.IN2
+A1 => inst21.IN0
+A1 => inst24.IN0
+A1 => inst25.IN2
+A1 => inst28.IN2
+A1 => inst31.IN0
+A1 => inst36.IN0
+A1 => inst37.IN2
+A1 => inst40.IN2
+A1 => inst43.IN0
+A1 => inst47.IN0
+A1 => inst46.IN2
+A0 => inst50.IN3
+A0 => inst5.IN0
+A0 => inst7.IN3
+A0 => inst14.IN0
+A0 => inst15.IN3
+A0 => inst20.IN0
+A0 => inst22.IN3
+A0 => inst27.IN0
+A0 => inst28.IN3
+A0 => inst32.IN0
+A0 => inst34.IN3
+A0 => inst39.IN0
+A0 => inst40.IN3
+A0 => inst44.IN0
+A0 => inst45.IN3
+A0 => inst49.IN0
+_CS => inst136.IN0
+D0 => CelulaRam:inst65.D
+D0 => CelulaRam:inst137.D
+D0 => CelulaRam:inst135.D
+D0 => CelulaRam:inst125.D
+D0 => CelulaRam:inst124.D
+D0 => CelulaRam:inst118.D
+D0 => CelulaRam:inst117.D
+D0 => CelulaRam:inst110.D
+D0 => CelulaRam:inst108.D
+D0 => CelulaRam:inst92.D
+D0 => CelulaRam:inst91.D
+D0 => CelulaRam:inst87.D
+D0 => CelulaRam:inst83.D
+D0 => CelulaRam:inst78.D
+D0 => CelulaRam:inst73.D
+D0 => CelulaRam:inst69.D
+_O1 <= inst141.DB_MAX_OUTPUT_PORT_TYPE
+D1 => CelulaRam:inst64.D
+D1 => CelulaRam:inst68.D
+D1 => CelulaRam:inst72.D
+D1 => CelulaRam:inst76.D
+D1 => CelulaRam:inst82.D
+D1 => CelulaRam:inst86.D
+D1 => CelulaRam:inst90.D
+D1 => CelulaRam:inst93.D
+D1 => CelulaRam:inst107.D
+D1 => CelulaRam:inst111.D
+D1 => CelulaRam:inst116.D
+D1 => CelulaRam:inst119.D
+D1 => CelulaRam:inst123.D
+D1 => CelulaRam:inst127.D
+D1 => CelulaRam:inst132.D
+D1 => CelulaRam:inst134.D
+_O2 <= inst140.DB_MAX_OUTPUT_PORT_TYPE
+D2 => CelulaRam:inst63.D
+D2 => CelulaRam:inst67.D
+D2 => CelulaRam:inst71.D
+D2 => CelulaRam:inst75.D
+D2 => CelulaRam:inst81.D
+D2 => CelulaRam:inst85.D
+D2 => CelulaRam:inst89.D
+D2 => CelulaRam:inst94.D
+D2 => CelulaRam:inst106.D
+D2 => CelulaRam:inst112.D
+D2 => CelulaRam:inst115.D
+D2 => CelulaRam:inst109.D
+D2 => CelulaRam:inst122.D
+D2 => CelulaRam:inst128.D
+D2 => CelulaRam:inst131.D
+D2 => CelulaRam:inst133.D
+_O3 <= inst139.DB_MAX_OUTPUT_PORT_TYPE
+D3 => CelulaRam:inst62.D
+D3 => CelulaRam:inst66.D
+D3 => CelulaRam:inst70.D
+D3 => CelulaRam:inst74.D
+D3 => CelulaRam:inst80.D
+D3 => CelulaRam:inst84.D
+D3 => CelulaRam:inst88.D
+D3 => CelulaRam:inst95.D
+D3 => CelulaRam:inst105.D
+D3 => CelulaRam:inst113.D
+D3 => CelulaRam:inst114.D
+D3 => CelulaRam:inst120.D
+D3 => CelulaRam:inst121.D
+D3 => CelulaRam:inst129.D
+D3 => CelulaRam:inst130.D
+D3 => CelulaRam:inst126.D
+internal3 <= gdfx_temp0.DB_MAX_OUTPUT_PORT_TYPE
+internal2 <= gdfx_temp1.DB_MAX_OUTPUT_PORT_TYPE
+internal0 <= gdfx_temp2.DB_MAX_OUTPUT_PORT_TYPE
+internal1 <= gdfx_temp3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SAP1|RAM:inst106|CelulaRam:inst65
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst137
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst135
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst125
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst124
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst118
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst117
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst110
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst108
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst92
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst91
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst87
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst83
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst78
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst73
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst69
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst64
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst68
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst72
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst76
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst82
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst86
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst90
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst93
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst107
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst111
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst116
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst119
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst123
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst127
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst132
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst134
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst63
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst67
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst71
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst75
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst81
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst85
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst89
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst94
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst106
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst112
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst115
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst109
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst122
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst128
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst131
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst133
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst62
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst66
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst70
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst74
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst80
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst84
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst88
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst95
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst105
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst113
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst114
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst120
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst121
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst129
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst130
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|RAM:inst106|CelulaRam:inst126
+Q <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+WE => inst1.IN0
+WE => inst2.IN0
+SELECT => inst1.IN1
+SELECT => inst.IN0
+D => inst8.DATAIN
+
+
+|SAP1|CI74173:inst79
+Q0 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+MR => inst35.IN0
+CP => inst23.CLK
+CP => inst24.CLK
+CP => inst25.CLK
+CP => inst26.CLK
+D0 => inst1.IN0
+E1 => inst14.IN0
+E2 => inst15.IN0
+OE1 => inst18.IN0
+OE2 => inst20.IN0
+Q1 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst5.IN0
+Q2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst7.IN0
+Q3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst8.IN0
+
+
+|SAP1|CI74173:inst97
+Q0 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+MR => inst35.IN0
+CP => inst23.CLK
+CP => inst24.CLK
+CP => inst25.CLK
+CP => inst26.CLK
+D0 => inst1.IN0
+E1 => inst14.IN0
+E2 => inst15.IN0
+OE1 => inst18.IN0
+OE2 => inst20.IN0
+Q1 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst5.IN0
+Q2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst7.IN0
+Q3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst8.IN0
+
+
+|SAP1|CI74173:inst98
+Q0 <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+MR => inst35.IN0
+CP => inst23.CLK
+CP => inst24.CLK
+CP => inst25.CLK
+CP => inst26.CLK
+D0 => inst1.IN0
+E1 => inst14.IN0
+E2 => inst15.IN0
+OE1 => inst18.IN0
+OE2 => inst20.IN0
+Q1 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+D1 => inst5.IN0
+Q2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+D2 => inst7.IN0
+Q3 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+D3 => inst8.IN0
+
+
